@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="title">Cars and Travel Survey Form</h1>
+    <p id="description">Survey Form</p>
+  </header>
+
+  <form action="" id="survey-form">
+    <div class="div form-group">
+      <label for="name" class="form-prompt">Name:</label>
+      <input type="text" id="name" required placeholder="Enter your name">
+    </div>
+    <div class="div form-group">
+      <label for="email" class="form-prompt">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="div form-group">
+      <label for="age" class="form-prompt">Age (Optional):</label>
+      <input type="number" min="10" id="age" placeholder="Enter your age">
+    </div>
+
+    <div class="form-group">
+      <label for="" class="form-prompt">
+        Choose your favorite car
+      </label>
+      <select name="favorite" id="fav-car">
+        <option value="Lamborghini" class="option">Urus</option>
+        <option value="Honda" class="Civc">Civic</option>
+        <option value="Ferrari" class="option">Ferrari 488</option>
+        <option value="Ford" class="option">Ford Taurus</option>
+        <option value="Toyota" class="option">Toyota Camry</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="" class="form-prompt">
+        What would you recommend to choose?
+      </label>
+      <label>
+        <input type="radio" value="definitely" name="car-recommend" class="radio-car-recommend" checked />
+        Definitely
+      </label>
+      <label>
+        <input type="radio" value="Maybe" name="car-recommend" class="radio-car-recommend" />
+        Maybe
+      </label>
+      <label>
+        <input type="radio" value="No" name="car-recommend" class="radio-car-recommend" />
+        Not Sure
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="" class="form-prompt">Places Where you want to go</label>
+      <label>
+        <input type="checkbox" value="paris" name="places" class="places" />
+        Miami, Los Angeles
+      </label>
+      <label>
+        <input type="checkbox" value="paris" name="places" class="places" />
+        New York, Las Vegas
+      </label>
+      <label>
+        <input type="checkbox" value="paris" name="places" class="places" />
+        Japan, Hong Kong
+      </label>
+      <label>
+        <input type="checkbox" value="paris" name="places" class="places" />
+        Philippines, Malaysia
+      </label>
+      <label>
+        <input type="checkbox" value="paris" name="places" class="places" />
+        Germany, France
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="comments" class="form-prompt">Additional Comments</label>
+      <textarea name="comments" id="comments" cols="100" rows="10" placeholder="comments"></textarea>
+    </div>
+    <button class="submit-button" type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
